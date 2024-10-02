@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <section style="width:100%; text-align:left">
+      <div>
+        <p id="p1">Eiffel Dorrearen eraikuntza 31ko martxoaren 1887n amaitu zen</p>
+        <input type="button" value="Verdadero" onclick="falso('p1')" />
+        <input type="button" value="Falso" onclick="verdadero('p1')" />
+      </div>
+
+      <br />
+
+      <div>
+        <p id="p2">Tximista entzun baino lehen ikusten da, argiak soinua baino azkarrago bidaiatzen duelako.</p>
+        <input type="button" value="Verdadero" onclick="verdadero('p2')" />
+        <input type="button" value="Falso" onclick="falso('p2')" />
+      </div>
+
+      <br />
+
+      <div>
+        <p id="p3">Vatikano Hiria herrialde bat da?</p>
+        <input type="button" value="Verdadero" onclick="verdadero('p3')" />
+        <input type="button" value="Falso" onclick="falso('p3')" />
+      </div>
+
+      <br />
+
+      <div>
+        <p id="p4">Mendiak itsasoaren maila baino altuagoak dira?</p>
+        <input type="button" value="Verdadero" onclick="verdadero('p4')" />
+        <input type="button" value="Falso" onclick="falso('p4')" />
+      </div>
+
+      <br />
+
+      <div>
+        <p id="p5">Melbourne Australiako hiriburua da?</p>
+        <input type="button" value="Verdadero" onclick="falso('p5')" />
+        <input type="button" value="Falso" onclick="verdadero('p5')" />
+      </div>
+
+      <br />
+      
+      <div>
+        <p id="p6">Brokolia limoiak baino C bitamina gehiago dauka?</p>
+        <input type="button" value="Verdadero" onclick="verdadero('p6')" />
+        <input type="button" value="Falso" onclick="falso('p6')" />
+      </div>
+
+      <br />
+      <div>
+        <p id="p7">Google hasieran BackRub deitzen zen?</p>
+        <input type="button" value="Verdadero" onclick="verdadero('p7')" />
+        <input type="button" value="Falso" onclick="falso('p7')" />
+      </div>
+      <br />
+    </section>
+
+    <script>
+      function verdadero(id) {
+        var elemento = document.getElementById(id);
+        elemento.style.backgroundColor = "lightgreen";
+      }
+
+      function falso(id) {
+        var elemento = document.getElementById(id);
+        elemento.style.backgroundColor = "lightcoral";
+      }
+    </script>
+  </body>
+</html>

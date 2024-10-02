@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongi Etorri</title>
+    <script>
+        function ongietorri(msg, color) {
+            var texto = document.getElementById('testua');
+            texto.innerHTML = msg;
+            texto.style.color = color;
+        }
+    </script>
+</head>
+<body>
+    <p id="testua"></p>
+    <button id="eus" onclick="alert('Ongi etorri!')">Euskera</button>
+      <button id="esp" onclick="alert('Bienvenido')">Castellano</button>
+     <button id="eng" onclick="alert('Welcome')">Inglés</button>
+</body>
+</html>

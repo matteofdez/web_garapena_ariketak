@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript-ekin irudiak aldatu</h1>
+    <img id="imagen" onclick="cambiaIMG()" src="Irudiak/goku1.png" width="100" height="100">
+    <p>Egin klik irudiaren gainean aldatzeko.</p>
+    <script>
+        function cambiaIMG() {
+            var imagen = document.getElementById('imagen');
+
+            if (imagen.src.includes("goku1.png")) {
+                imagen.src = "Irudiak/goku2.png";
+            } else if (imagen.src.includes("goku2.png")) {
+                imagen.src = "Irudiak/goku3.png";
+            } else {
+                imagen.src = "Irudiak/goku1.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
