@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie</title>
+</head>
+
+<body>
+	<div class="centro">
+		<p class="etiqueta">COOKIE</p><br/>
+		<script>
+			document.cookie = "erabiltzailea=Matteo";
+			var erabilCookie = "Matteo";
+			document.cookie = "erabiltzailea" + encodeURIComponent(erabilCookie);
+			document.cookie = "erabiltzailea=Matteo; expires=Sat, 16 Nov 2024 12:15:00 GMT";
+		</script>
+	</div>
+	<button type="button" onclick='document.cookie="erabiltzailea=Matteo; expires=Sat, 16 Nov 2024"'>Cookie-a
+		sortu</button>
+	<button type="button" onclick="alert(document.cookie)">Cookieak bistaratu</button>
+</body>
+
+</html>
